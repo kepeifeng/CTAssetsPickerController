@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		363F8D0A685BF86C60D06D49 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B2FBB7FD634FB543BB7BB6 /* Pods.framework */; };
-		AB6BFE048A5A9AB40D866F4B /* Pods_CTAssetsPickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5734CB95BC58356B92A40C /* Pods_CTAssetsPickerDemo.framework */; };
+		150E0CEA0FC5F06DFFD47EF8 /* Pods_CTAssetsPickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5734CB95BC58356B92A40C /* Pods_CTAssetsPickerDemo.framework */; };
+		374682821C71A82500B23097 /* Pods_CTAssetsPickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374682811C71A82500B23097 /* Pods_CTAssetsPickerDemo.framework */; };
 		AD0786D91B428313003C8863 /* CTBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0786D81B428313003C8863 /* CTBasicViewController.m */; };
 		AD0786DF1B42864F003C8863 /* CTSelectedAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0786DE1B42864F003C8863 /* CTSelectedAssetsViewController.m */; };
 		AD0786E21B428A73003C8863 /* CTDefaultAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0786E11B428A73003C8863 /* CTDefaultAlbumViewController.m */; };
@@ -34,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		02D03140037A22DD506563C4 /* Pods-CTAssetsPickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTAssetsPickerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CTAssetsPickerDemo/Pods-CTAssetsPickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		374682811C71A82500B23097 /* Pods_CTAssetsPickerDemo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_CTAssetsPickerDemo.framework; path = "Pods/../build/Debug-iphoneos/Pods_CTAssetsPickerDemo.framework"; sourceTree = "<group>"; };
 		408BD0916F5C7C71C93D0E93 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8E2AA54BCFD329B17C83D129 /* Pods-CTAssetsPickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTAssetsPickerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CTAssetsPickerDemo/Pods-CTAssetsPickerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A741BBA21B5F7A8C00ED3D7B /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -193,8 +194,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363F8D0A685BF86C60D06D49 /* Pods.framework in Frameworks */,
-				AB6BFE048A5A9AB40D866F4B /* Pods_CTAssetsPickerDemo.framework in Frameworks */,
+				374682821C71A82500B23097 /* Pods_CTAssetsPickerDemo.framework in Frameworks */,
+				150E0CEA0FC5F06DFFD47EF8 /* Pods_CTAssetsPickerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +384,7 @@
 		B8A790EFA0682C7A149F5D3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				374682811C71A82500B23097 /* Pods_CTAssetsPickerDemo.framework */,
 				F1B2FBB7FD634FB543BB7BB6 /* Pods.framework */,
 				BE5734CB95BC58356B92A40C /* Pods_CTAssetsPickerDemo.framework */,
 			);
@@ -704,6 +706,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = CTAssetsPickerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -718,6 +724,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = CTAssetsPickerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

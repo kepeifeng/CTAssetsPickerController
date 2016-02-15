@@ -23,7 +23,14 @@ Pod::Spec.new do |spec|
   #only *.lproj copied
   #spec.resource_bundles      = { 'CTAssetsPickerController' => ['CTAssetsPickerController/Resources/CTAssetsPicker.xcassets/*/*.png', 'CTAssetsPickerController/Resources/*.lproj'] }
   #no file copied
-  spec.resource_bundles      = { 'CTAssetsPickerController' => ['CTAssetsPickerController/Resources/CTAssetsPicker.xcassets/*/*.png'] }
+  #spec.resource_bundles      = { 'CTAssetsPickerController' => ['CTAssetsPickerController/Resources/CTAssetsPicker.xcassets/*/*.png'] }
+  #Got assets.car file, but unable to access the images
+  #spec.resource_bundles      = { 'CTAssetsPickerController' => ['CTAssetsPickerController/Resources/**/*'] }
+  
+  #work!
+  spec.resource_bundles      = { 'CTAssetsPickerController' => ['CTAssetsPickerController/Resources/*.lproj'] }
+  spec.resources =  'CTAssetsPickerController/Resources/CTAssetsPicker.xcassets'
+  
   spec.ios.frameworks        = 'Photos'
   spec.requires_arc          = true
   spec.dependency            'PureLayout', '~> 3.0.0'
